@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Bookstore
+
+>This is a simple bookstore app created using the react-redux library.  
+>This is the second milestone of the project where I have added redux and displayed some books as the initial state of the app.  
+>The main objective of this assignment is to learn about redux state management library.
+<div align="center">
+
+[![View Code](https://img.shields.io/badge/View%20-Code-green)](https://github.com/praz99/bookstore)
+[![Github Issues](https://img.shields.io/badge/GitHub-Issues-orange)](https://github.com/praz99/bookstore/issues)
+[![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)](https://github.com/praz99/bookstore/pulls)
+
+</div>
+
+## 📝 Contents
+
+<p align="center">
+<a href="#with">Built with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#ll">Live Demo Link</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#gs">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#author">Author</a>
+</p>
+
+## 🔧 Built with<a name = "with"></a>
+- ReactJS
+- React-Redux
+- HTML 5 and CSS 3
+
+![screenshot](src/images/img.png)
+
+## Live Demo Link <a name = "ll"></a>
+
+[See Live](https://praz-bookstore.herokuapp.com/)
+
+
+## Getting Started <a name = "gs"></a>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+To get a local copy of the repository please run the following commands on your terminal:
 
-In the project directory, you can run:
+```
+$ git clone git@github.com:praz99/bookstore.git
+```
+```
+$ cd bookstore
+```
 
-### `yarn start`
+```
+$ yarn install
+```
+```
+$ yarn start
+```
 
-Runs the app in the development mode.\
+This runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## ✒️  Authors <a name = "author"></a>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+👤 **Prajwal Thapa**
 
-### `yarn test`
+- Github: [praz99](https://github.com/praz99)
+- Twitter: [@thapa_praz](https://twitter.com/thapa_praz)
+- LinkedIn: [prazwal-thapa](https://linkedin.com/in/prazwal-thapa)
+- Email: t.prazwal@gmail.com
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🤝 Contributing
 
-### `yarn build`
+Contributions, issues and feature requests are welcome!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Feel free to check the [issues page](https://github.com/praz99/bookstore/issues).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 👍 Show your support
 
-### `yarn eject`
+Give a ⭐️ if you like this project!
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## :clap: Acknowledgements
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Microverse](https://www.microverse.org/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 📝 License
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./LICENSE) licensed.
