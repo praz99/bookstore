@@ -15,4 +15,6 @@ const removeBookAction = book => (
   }
 );
 
-export { CREATE_BOOK, REMOVE_BOOK, createBookAction, removeBookAction };
+export {
+  CREATE_BOOK, REMOVE_BOOK, createBookAction, removeBookAction,
+};

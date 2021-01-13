@@ -4,7 +4,7 @@ const BooksForm = () => {
   const category = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
   return (
-    <>
+    <form>
       <h2>Add New Book...</h2>
       <label htmlFor="form-book-title">Title of the Book</label>
       <input type="text" id="form-book-title" name="form-book-title" />
@@ -18,7 +18,8 @@ const BooksForm = () => {
         <option value="learning">Learning</option>
         <option value="sci-fi">Sci-Fi</option>
       </select>
-    </>
+      <button type="submit">Submit</button>
+    </form>
   );
 };
 
