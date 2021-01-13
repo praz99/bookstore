@@ -1,25 +1,53 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { connect } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
+import PropTypes from 'prop-types';
 import CATEGORIES from '../constants/categories';
+import { createBookAction } from '../actions/index';
 
-const BooksForm = () => (
-  <form>
-    <h2>Add New Book...</h2>
-    <label htmlFor="form-book-title">
-      Title of the Book
-      <input type="text" id="form-book-title" name="form-book-title" />
-    </label>
-    <label htmlFor="categories">
-      Choose a category
-      <select id="categories">
-        {
-          CATEGORIES.map(category => (
+const BooksForm = ({ createBook }) => {
+  const [state, setState] = useState({ title: '', category: '' });
+  const handleChange = ({ target: { name, value } }) => {
+    setState({ ...state, [name]: value });
+  };
+
+  const { title, category } = state;
+  const handleSubmit = e => {
+    e.preventDefault();
+    createBook({
+      id: uuidv4(),
+      title,
+      category,
+    });
+    setState({ title: '', category: '' });
+  };
+
+  return (
+    <>
+      <h2>Add New Book</h2>
+      <form onSubmit={handleSubmit}>
+        <input type="text" value={state.title || ''} onChange={handleChange} id="title" name="title" required />
+        <select
+          onChange={handleChange}
+          name="category"
+          value={state.category}
+          required
+        >
+          <option value="default">Select a category</option>
+          {CATEGORIES.map(category => (
             <option key={category} value={category}>{category}</option>
-          ))
-        }
-      </select>
-    </label>
-    <button type="submit">Submit</button>
-  </form>
-);
+          ))}
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+    </>
+  );
+};
 
-export default BooksForm;
+BooksForm.propTypes = {
+  createBook: PropTypes.func.isRequired,
+};
+
+const mapDispatchToProps = dispatch => ({ createBook: book => dispatch(createBookAction(book)) });
+
+export default connect(null, mapDispatchToProps)(BooksForm);

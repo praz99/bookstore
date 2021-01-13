@@ -1,21 +1,18 @@
 import { CREATE_BOOK, REMOVE_BOOK } from '../actions/index';
-import INITIAL_STATE from '../constants/initialState';
+// import INITIAL_STATE from '../constants/initialState';
 
-const bookReducer = (state = INITIAL_STATE, action) => {
+const bookReducer = (state = [], action) => {
   switch (action.type) {
     case CREATE_BOOK:
       return [...state,
-        {
-          id: action.book.id,
-          title: action.book.title,
-          category: action.book.category,
-        },
-      ];
+      {
+        id: action.book.id,
+        title: action.book.title,
+        category: action.book.category,
+      },
+    ];
     case REMOVE_BOOK:
-      return [
-        ...state.slice(0, action.index),
-        ...state.slice(action.index + 1, state.length),
-      ];
+      return state.filter(book => book.id !== action.book.id);
     default:
       return state;
   }
