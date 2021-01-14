@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import PropTypes from 'prop-types';
-import CATEGORIES from '../constants/categories';
+import selectCategories from '../constants/categories';
 import { createBookAction } from '../actions/index';
 
 const BooksForm = ({ createBook }) => {
@@ -34,9 +34,7 @@ const BooksForm = ({ createBook }) => {
           required
         >
           <option value="default">Select a category</option>
-          {CATEGORIES.map(category => (
-            <option key={category} value={category}>{category}</option>
-          ))}
+          {selectCategories}
         </select>
         <button type="submit">Submit</button>
       </form>
