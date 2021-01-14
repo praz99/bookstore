@@ -21,7 +21,7 @@ const changeFilterAction = filter => (
     type: CHANGE_FILTER,
     filter,
   }
-)
+);
 
 export {
   CREATE_BOOK, REMOVE_BOOK, CHANGE_FILTER, createBookAction, removeBookAction, changeFilterAction,

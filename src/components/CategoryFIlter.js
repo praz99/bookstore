@@ -6,7 +6,7 @@ const CategoryFilter = () => {
   <select>
     <option value="All">All</option>
     {selectCategories}
-  </select>
-}
+  </select>;
+};
 
 export default CategoryFilter;

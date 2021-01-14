@@ -5,7 +5,9 @@ import { removeBookAction, changeFilterAction } from '../actions/index';
 import CategoryFilter from '../components/CategoryFIlter';
 import Book from '../components/Book';
 
-const BooksList = ({ books, removeBook, filter, changeFilter }) => {
+const BooksList = ({
+  books, removeBook, filter, changeFilter,
+}) => {
   const handleRemoveBook = book => removeBook(book);
   const handleFilterChange = e => changeFilter(e.target.value);
   const bookFilter = filter === 'All' ? books : books.filter(book => book.category === filter);
