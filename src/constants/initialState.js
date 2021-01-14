@@ -7,6 +7,7 @@ const INITIAL_STATE = {
     { id: uuidv4(), title: 'Tales from Andromeda', category: 'Sci-fi' },
     { id: uuidv4(), title: 'Laughing Colors', category: 'Kids' },
   ],
+  filter: 'All',
 };
 
 export default INITIAL_STATE;
