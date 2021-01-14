@@ -1,16 +1,7 @@
-import { v4 as uuidv4 } from 'uuid';
 import { CREATE_BOOK, REMOVE_BOOK } from '../actions/index';
+// import INITIAL_STATE from '../constants/initialState';
 
-const initialState = {
-  books: [
-    { id: uuidv4(), title: 'The Cry from Far', category: 'Horror' },
-    { id: uuidv4(), title: 'The Little Master', category: 'Adventure' },
-    { id: uuidv4(), title: 'Tales from Andromeda', category: 'Sci-fi' },
-    { id: uuidv4(), title: 'Laughing Colors', category: 'Kids' },
-  ],
-};
-
-const bookReducer = (state = initialState, action) => {
+const bookReducer = (state = [], action) => {
   switch (action.type) {
     case CREATE_BOOK:
       return [...state,
@@ -21,10 +12,7 @@ const bookReducer = (state = initialState, action) => {
         },
       ];
     case REMOVE_BOOK:
-      return [
-        ...state.slice(0, action.index),
-        ...state.slice(action.index + 1, state.length),
-      ];
+      return state.filter(book => book.id !== action.book.id);
     default:
       return state;
   }

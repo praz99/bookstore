@@ -1,7 +1,7 @@
 # Bookstore
 
 >This is a simple bookstore app created using the react-redux library.  
->This is the second milestone of the project where I have added redux and displayed some books as the initial state of the app.  
+>This is the third milestone of the project where I have added feature to add a new book or remove a book from the redux store.    
 >The main objective of this assignment is to learn about redux state management library.
 <div align="center">
 
