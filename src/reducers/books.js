@@ -1,5 +1,4 @@
 import { CREATE_BOOK, REMOVE_BOOK } from '../actions/index';
-// import INITIAL_STATE from '../constants/initialState';
 
 const bookReducer = (state = [], action) => {
   switch (action.type) {
