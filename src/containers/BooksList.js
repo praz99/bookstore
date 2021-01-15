@@ -16,19 +16,9 @@ const BooksList = ({
   return (
     <>
       <CategoryFilter handleFilterChange={handleFilterChange} />
-      <table className="books-table">
-        <thead>
-          <tr>
-            <th>Id</th>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          {booksList}
-        </tbody>
-      </table>
+      <div className="book-list">
+        {booksList}
+      </div>
     </>
   );
 };
