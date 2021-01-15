@@ -1,0 +1,5 @@
+.book-container {
+  display: flex;
+  border: 1px solid rgb(206, 204, 204);
+  padding: 12px;
+}
