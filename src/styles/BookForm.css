@@ -1,7 +1,13 @@
+.book-form-container {
+  width: 80%;
+  margin: 3em auto;
+}
+
 form {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 .bookform-heading {

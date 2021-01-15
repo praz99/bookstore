@@ -1,7 +1,8 @@
 .book-container {
-  margin: 0 auto;
+  margin: 1em auto;
   display: flex;
   padding: 14px;
+  width: 80%;
   border: solid 1px #e8e8e8;
   background-color: #ffffff;
 }

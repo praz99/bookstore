@@ -24,7 +24,7 @@ const BooksForm = ({ createBook }) => {
   };
 
   return (
-    <>
+    <div className="book-form-container">
       <h2 className="bookform-heading">Add New Book</h2>
       <form onSubmit={handleSubmit}>
         <input type="text" value={state.title || ''} onChange={handleChange} id="title" name="title" placeholder="Book title" required />
@@ -34,7 +34,7 @@ const BooksForm = ({ createBook }) => {
         </select>
         <button className="bookform-btn" type="submit">add book</button>
       </form>
-    </>
+    </div>
   );
 };
 
