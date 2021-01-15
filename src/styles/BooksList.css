@@ -27,3 +27,21 @@
   text-transform: uppercase;
   margin-left: 3.5em;
 }
+
+.user-icon {
+  width: 40px;
+  height: 40px;
+  padding: 14px;
+  border: solid 1px #e8e8e8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 10%;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+}

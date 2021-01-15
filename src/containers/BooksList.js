@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { removeBookAction, changeFilterAction } from '../actions/index';
 import CategoryFilter from '../components/CategoryFilter';
 import Book from '../components/Book';
+import userIcon from '../images/user.png';
 import '../styles/BooksList.css';
 
 const BooksList = ({
@@ -22,6 +23,9 @@ const BooksList = ({
         <div className="navbar-cats">categories</div>
         <div className="navbar-cats">
           <CategoryFilter handleFilterChange={handleFilterChange} />
+        </div>
+        <div className="user-icon">
+          <img src={userIcon} alt="user" />
         </div>
       </nav>
       <div className="book-list">
