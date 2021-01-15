@@ -1,6 +1,5 @@
 .book-container {
   margin: 0 auto;
-  width: 80%;
   display: flex;
   padding: 14px;
   border: solid 1px #e8e8e8;
@@ -14,6 +13,10 @@
 .book-right {
   width: 40%;
   padding-left: 70px;
+}
+
+.book-right > * {
+  margin: 5px 0;
 }
 
 .book-category {
