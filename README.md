@@ -1,7 +1,7 @@
 # Bookstore
 
 >This is a simple bookstore app created using the react-redux library.  
->This is the fourth milestone of the project where I have added feature to filter books in the table by the book category.  
+>This is the fifth milestone of the project where I have added the styling to the app.  
 >The main objective of this assignment is to learn about redux state management library.
 <div align="center">
 
@@ -25,8 +25,7 @@
 - React-Redux
 - HTML 5 and CSS 3
 
-![screenshot](src/images/imgAll.png)
-![screenshot](src/images/imgKids.png)
+![screenshot](src/images/img.png)
 
 ## Live Demo Link <a name = "ll"></a>
 

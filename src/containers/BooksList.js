@@ -2,8 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { removeBookAction, changeFilterAction } from '../actions/index';
-import CategoryFilter from '../components/CategoryFIlter';
+import CategoryFilter from '../components/CategoryFilter';
 import Book from '../components/Book';
+import userIcon from '../images/user.png';
+import '../styles/BooksList.css';
 
 const BooksList = ({
   books, removeBook, filter, changeFilter,
@@ -15,20 +17,20 @@ const BooksList = ({
 
   return (
     <>
-      <CategoryFilter handleFilterChange={handleFilterChange} />
-      <table className="books-table">
-        <thead>
-          <tr>
-            <th>Id</th>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          {booksList}
-        </tbody>
-      </table>
+      <nav className="navbar">
+        <h1 className="navbar-heading">Bookstore CMS</h1>
+        <div className="navbar-cats">books</div>
+        <div className="navbar-cats">categories</div>
+        <div className="navbar-cats">
+          <CategoryFilter handleFilterChange={handleFilterChange} />
+        </div>
+        <div className="user-icon">
+          <img src={userIcon} alt="user" />
+        </div>
+      </nav>
+      <div className="book-list">
+        {booksList}
+      </div>
     </>
   );
 };

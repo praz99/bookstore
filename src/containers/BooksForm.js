@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import PropTypes from 'prop-types';
 import selectCategories from '../constants/categories';
 import { createBookAction } from '../actions/index';
+import '../styles/BookForm.css';
 
 const BooksForm = ({ createBook }) => {
   const [state, setState] = useState({ title: '', category: '' });
@@ -23,22 +24,17 @@ const BooksForm = ({ createBook }) => {
   };
 
   return (
-    <>
-      <h2>Add New Book</h2>
+    <div className="book-form-container">
+      <h2 className="bookform-heading">Add New Book</h2>
       <form onSubmit={handleSubmit}>
-        <input type="text" value={state.title || ''} onChange={handleChange} id="title" name="title" required />
-        <select
-          onChange={handleChange}
-          name="category"
-          value={state.category}
-          required
-        >
+        <input type="text" value={state.title || ''} onChange={handleChange} id="title" name="title" placeholder="Book title" required />
+        <select className="bookform-select" onChange={handleChange} name="category" value={state.category}>
           <option value="default">Select a category</option>
           {selectCategories}
         </select>
-        <button type="submit">Submit</button>
+        <button className="bookform-btn" type="submit">add book</button>
       </form>
-    </>
+    </div>
   );
 };
 
